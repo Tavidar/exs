@@ -72,6 +72,43 @@ UI must not directly mutate SQLite.
 AI must not bypass typed services.
 Business modules must not hardcode provider-specific AI calls.
 
+
+
+# BUSINESS LAUNCH ASSISTANT
+
+The platform must support entrepreneurs before the business exists.
+
+The system must act as an intelligent business registration assistant for Georgia.
+
+Its goal is to guide a future entrepreneur through the complete business creation process.
+
+The assistant must not assume knowledge.
+
+The assistant must collect all required information through structured interviews.
+
+The assistant must ask questions one-by-one.
+
+The assistant must explain why each question matters.
+
+The assistant must determine:
+
+- business activity;
+- expected turnover;
+- expected annual revenue;
+- expected expenses;
+- number of employees;
+- legal structure;
+- ownership structure;
+- physical premises requirements;
+- property ownership;
+- business location;
+- import/export activities;
+- online/offline operation;
+- VAT relevance;
+- small business eligibility;
+- micro business eligibility;
+- future scaling expectations.
+
 ## Current Technical Foundation
 
 Use the Exsul codebase as reference for:

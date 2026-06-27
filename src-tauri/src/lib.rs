@@ -5,6 +5,7 @@
 // flowers/...). Чистое ядро под AI-ассистента.
 
 mod ai;
+mod business;
 mod commands;
 mod db;
 mod events;
@@ -178,6 +179,13 @@ pub fn run() {
             commands::ai::ai_set_provider,
             commands::ai::ai_set_provider_key,
             commands::ai::ai_delete_provider_key,
+            // ── Business / ELS (Entrepreneur Launch System) ──
+            commands::business::business_discovery_questions,
+            commands::business::business_start_session,
+            commands::business::business_get_session,
+            commands::business::business_list_sessions,
+            commands::business::business_submit_answer,
+            commands::business::business_generate_profile,
             // ── Categories ──
             commands::categories::get_categories,
             commands::categories::create_category,

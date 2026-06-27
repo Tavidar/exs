@@ -6,6 +6,7 @@
 	import ResultScene from '$lib/components/ResultScene.svelte';
 	import { ActionIsland } from '$lib/components/actions';
 	import { actionIsland, registerActions } from '$lib/actions';
+	import { createBusinessActions } from '$lib/business/actions';
 	import { scene } from '$lib/scene/scene.svelte';
 	import { t } from '$lib/i18n';
 	import {
@@ -218,7 +219,8 @@
 						await exportBackup();
 						notice = t('system.backupReady');
 					}
-				}
+				},
+				...createBusinessActions({ present: (message) => (notice = message), isTauri })
 			],
 			{ replace: true }
 		);

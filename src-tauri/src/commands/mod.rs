@@ -1,6 +1,7 @@
 pub mod ai;
 pub mod audit;
 pub mod backup;
+pub mod business;
 pub mod categories;
 pub mod context_files;
 pub mod inventory;

@@ -45,6 +45,12 @@ const MIGRATIONS: &[Migration] = &[
         needs_fk_off: false,
     },
     Migration {
+        version: 5,
+        name: "business_module",
+        sql: include_str!("../../migrations/005_business_module.sql"),
+        needs_fk_off: false,
+    },
+    Migration {
         // Deliberately outside the legacy Exsul range (1..32): old user
         // databases otherwise mistake the new core migrations for migrations
         // that were already applied by the donor application.
